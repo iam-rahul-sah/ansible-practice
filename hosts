@@ -10,6 +10,7 @@
 
 # Ex 1: Ungrouped hosts, specify before any group headers:
 
+65.1.108.176 ansible_ssh_private_key_file=/home/rahul/.ssh/GeneralAWSKey.pem ansible_user=ubuntu
 ## green.example.com
 ## blue.example.com
 ## 192.168.100.1
