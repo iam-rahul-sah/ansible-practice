@@ -4,4 +4,7 @@
 
   tasks:
   - name: "Test connectivity"
-    ping: 
+    ping:
+
+  - name: "Print Output"
+    debug: msg="Alright!!" 
