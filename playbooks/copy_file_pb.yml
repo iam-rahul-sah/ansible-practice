@@ -1,0 +1,10 @@
+---
+- name: "Copying files to remtote server"
+  become: yes
+  hosts: all
+
+  tasks: 
+  - name: "Copy Files"
+    copy: 
+      src: /home/rahul/documents/myfile.txt
+      dest: /tmp/
