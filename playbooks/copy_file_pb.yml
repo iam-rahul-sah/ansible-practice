@@ -8,3 +8,7 @@
     copy: 
       src: /home/rahul/documents/myfile.txt
       dest: /tmp/
+      owner: ubuntu
+      group: ubuntu
+      mode: ugo=rw
+      backup: true
