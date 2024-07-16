@@ -1,0 +1,21 @@
+---
+- name: "File Module"
+  hosts: all
+  become: yes
+
+  tasks: 
+  - name: "Creating a file"
+    file: 
+      path: /tmp/created_file.txt
+      state: touch
+      owner: ubuntu
+      group: ubuntu
+      mode: u=rw,g=r,o=r
+
+  - name: "Creating a directory"
+    file: 
+      path: /tmp/myFolder
+      state: directory
+      owner: ubuntu
+      group: ubuntu
+      mode: u=rwx,g=rw,o=
